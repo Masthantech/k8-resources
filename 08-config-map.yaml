@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata: 
   name: pod-config 
   labels: 
-    purpose: env config 
+    purpose: env-config 
     env: dev 
 
 data: 
