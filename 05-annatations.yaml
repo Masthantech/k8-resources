@@ -1,0 +1,11 @@
+apiVersion: v1 
+lind: Pod
+
+metadata:
+  name: annatations
+  labels: 
+    purpose: demo
+    project: roboshop
+annatations:
+  description: "this pod is created to demonstrate pod annatations"
+  jenkins: "https://jenkins.com/build/roboshop"    
