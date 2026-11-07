@@ -1,0 +1,15 @@
+apiVersion: v1 
+kind: Pod 
+
+metadata: 
+  name: envvar-demo 
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: Trainer
+      value: "siva"
+    - name: Course
+      value: "k82" 
+
