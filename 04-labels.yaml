@@ -6,7 +6,7 @@ metadata:
   labels:
     project: demo
     component: nginx 
-    tier: web tier
+    tier: web-tier
     environment: dev 
 
 spec: 
