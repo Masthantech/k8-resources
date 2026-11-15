@@ -1,4 +1,4 @@
-apiVersion: app/v1 
+apiVersion: apps/v1 
 kind: Deployment 
 metadata: 
   name: nginx-dp 
@@ -22,8 +22,8 @@ spec:
       containers: 
       - name: nginx 
         image: nginx:1.22 
-        
-            
+
+
                
 
 #if we make any changes to pod image version and apply chanegs then, pod are recreated to
