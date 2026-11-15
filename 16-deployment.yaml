@@ -1,28 +1,30 @@
-apiVersion: apps/v1 
+apiVersion: app/v1 
 kind: Deployment 
 metadata: 
   name: nginx-dp 
   labels: 
     purpose: nginx-dp-demo 
 spec: 
-  replicas: 3 
+  replicas: 2 
   selector: 
-    matchlabels: 
-      purpose: nginx-dp-demo
+    matchLabels: 
+      purpose: nginx-db-demo 
       project: roboshop 
       environment: dev 
-
   template: 
     metadata: 
-      name: nginx-dp
+      name: nginx-dp 
       labels: 
-        purpose: nginx-dp-demo
+        purpose: nginx-db-demo 
         project: roboshop 
         environment: dev 
     spec: 
       containers: 
-      - name: nginx
-        image: nginx    
+      - name: nginx 
+        image: nginx:1.22 
+        
+            
+               
 
 #if we make any changes to pod image version and apply chanegs then, pod are recreated to
 #match th echanges with the replicas.                
