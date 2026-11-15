@@ -1,26 +1,36 @@
-apiVersion: app/v1 
-kind: ReplicaSet 
+apiVersion: v1 
+kibd: Replicaset 
 metadata: 
-  name: nginx-rs 
-  labels:
-    purpose: nginx-rs-demo 
+  name: nginx-rs
+  labels: 
+    purpose: nginx-rs-demo
 spec: 
-  replicas: 3 
+  replicas: 2
   selector: 
-    matchLabels:
-      purpose: 
-      project: 
-      environment: 
-
-  template: 
+    matchLabels: 
+      purpose: nginx-rs-demo
+      project: roboshop
+      environment: dev
+  template:
     metadata: 
-      name: nginx-rs 
+      name: nginx-rs
       labels: 
         purpose: nginx-rs-demo
-        project: roboshop 
-        environment: dev 
+        project: roboshop
+        environment: dev
     spec: 
       containers: 
-      - name: nginx 
-        image: nginx 
-                    
+        name: nginx
+        image: nginx:1.22
+
+# kubectl apply -f 15-replicaset.yaml 
+#kubectl get pods, 3 pods are are created. if we change the 
+#count if replicas and apply the changes then it will update the pods to match the count
+#if we make any changes in pod versions and apply, Replicaset doesn't care about that version changes
+#it sole responsibility is to maintain the desired numbers of relicas only
+
+#-----Deployment--------
+# The Deplyment resoure is useful when we want to chages the versions of pods.
+# The syntax for Deployment resource is same as replicaset,only the kind need to be chnaged to Deployment.
+# We can mention the number of replicas we want.
+
