@@ -59,7 +59,7 @@ metadata:
   labels: 
     purpose: demo 
 spec:
-  type: loadBalancer
+  type: LoadBalancer
   selector: 
     purpose: ebs-static-demo
     environment: dev
