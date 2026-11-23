@@ -21,7 +21,7 @@ metadata:
 
 spec: 
   storageClassName: "" #empty sring must be explicitly set otherwise default storagecall will be set  
-  volumeNmae: efs-static # name of the PV we created 
+  volumeName: efs-static # name of the PV we created 
   accessModes: 
     - ReadWriteOnce 
   resources: 
