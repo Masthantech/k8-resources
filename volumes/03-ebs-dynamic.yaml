@@ -36,15 +36,17 @@ spec:
 apiVersion: v1 
 kind: Service 
 metadata: 
-  name: nginx-lb
+  name: nginx-lb 
   labels: 
-    purpose: demo 
-spec:
-  type: LoadBalancer
+    purpose: ebs-dynamic 
+spec: 
+  type: LoadBalancer 
   selector: 
-    purpose: ebs-dynamic-demo
-    environment: dev
+    purpose: ebs-dynamic-demo 
+    enviroment: dev 
   ports: 
   - protocol: TCP 
-    port: 80
-    targetPort: 80      
+    port: 80 
+    targetPort: 80       
+
+    
