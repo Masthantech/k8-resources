@@ -19,7 +19,7 @@ metadata:
     purpose: ebs-dynamic-demo 
     enviroment: dev 
 spec: 
-  nodeSelectoer: 
+  nodeSelector: 
     topology.kubernetes.io/zone: us-east-1d   
   containers: 
   - name: nginx 
