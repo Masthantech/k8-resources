@@ -4,4 +4,4 @@ metadata:
   name: robboshop-ebs-sc 
 reclaimPolicy: Retain 
 provisioner: ebs.csi.aws.com 
-volumeBindingMode: waitForFirstConsumer  
+volumeBindingMode: WaitForFirstConsumer  
