@@ -48,8 +48,8 @@ spec:
       mountPath: /usr/share/nginx/html
   volumes: 
   - name: persistent-storage 
-    volumeReclaimPolicy:
-      volumeName: efs-static       
+    persistentVolumeClaim:
+      claimName: efs-static       
 
 --- 
 apiVersion: v1 
