@@ -5,7 +5,6 @@ metadata:
   name: frontend
   labels: 
     purpose: demo 
-
 spec:
   containers:
   - name: nginx
