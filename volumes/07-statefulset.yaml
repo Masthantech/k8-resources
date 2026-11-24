@@ -61,7 +61,8 @@ spec:
       image: nginx 
       volumeMounts: 
       - name: www 
-        path: /usr/share/nginx/html
+        mountPath: /usr/share/nginx/html
+
   volumeClaimTemplates: 
   - metadata: 
       name: www 
