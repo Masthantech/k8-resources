@@ -7,7 +7,7 @@ metadata:
     project: roboshop 
     environment: dev 
 spec: 
-  clusterIP: none 
+  clusterIP: None 
   selector: 
     purpose: statefulset-demo 
     project: roboshop 
