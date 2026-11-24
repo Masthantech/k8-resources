@@ -56,12 +56,12 @@ spec:
         project: roboshop 
         environment: dev
     spec: 
-    containers: 
-    - name: nginx 
-      image: nginx 
-      volumeMounts: 
-      - name: www 
-        mountPath: /usr/share/nginx/html
+      containers: 
+      - name: nginx 
+        image: nginx 
+        volumeMounts: 
+        - name: www 
+          mountPath: /usr/share/nginx/html
 
   volumeClaimTemplates: 
   - metadata: 
