@@ -25,7 +25,6 @@ metadata:
     project: roboshop 
     environment: dev 
 spec: 
-  clusterIP: none 
   selector: 
     purpose: statefulset-demo 
     project: roboshop 
@@ -63,7 +62,7 @@ spec:
       volumeMounts: 
       - name: www 
         path: /usr/share/nginx/html
-  volumeClaimTemplate: 
+  volumeClaimTemplates: 
   - metadata: 
       name: www 
     spec: 
